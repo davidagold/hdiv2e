@@ -11,6 +11,6 @@ else
 fi
 
 for config_id in $(seq $start_config $end_config) ; do
-  sbatch src/hdiv2e.sbatch $config_id
+  sbatch hdiv2e.sbatch $config_id
   # echo $config_id
 done
