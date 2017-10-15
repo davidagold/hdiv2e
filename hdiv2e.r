@@ -233,7 +233,8 @@ trial <- function() {
     beta2_1 = beta2[1],
     beta2_2 = beta2[1],
     Delta.hat = Deltahat
-    )
+  ) %>%
+    write.csv(file = paste("res/res_", config_id_, "_", trial_id, ".csv", sep=''))
 }
 
 trial()
